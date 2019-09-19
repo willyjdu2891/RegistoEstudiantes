@@ -1,0 +1,39 @@
+﻿@model IEnumerable<RegistroEstudiante.data.Estudiante>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Diplomado ASP.NET</h1>
+    
+</div>
+
+<div class="row">
+    
+    <div class="col-md-12">
+        
+        <label>Existen:</label> @Model.Count()
+        <label> inscritos</label>
+
+        <table class="table table-condensed">
+
+            <tr>
+                <th>ID</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Nombres</td>
+
+            <td>@item.Apellidos</td>
+        </tr>
+            }
+           
+
+        </table>
+    </div>
+</div>
+
