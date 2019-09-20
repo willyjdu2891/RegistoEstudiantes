@@ -14,15 +14,15 @@ namespace RegistroEstudiante.web
         internal static void ResolveDependencies()
         {
 
-            var builder = new ContainerBuilder();
+            //var builder = new ContainerBuilder();
 
-            builder.RegisterControllers(typeof(MvcApplication).Assembly);
+            //builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
-            builder.RegisterType<EstudianteServiceTest>().As<IEstudiantesService>().SingleInstance();
-            builder.RegisterType<CursoServiceTest>().As<ICursosService>().SingleInstance();
+            //builder.RegisterType<EstudianteServiceTest>().As<IEstudiantesService>().SingleInstance();
+            //builder.RegisterType<CursoServiceTest>().As<ICursosService>().SingleInstance();
 
-            var container = builder.Build();
-            DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+            //var container = builder.Build();
+            //DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
         }
     }
 }

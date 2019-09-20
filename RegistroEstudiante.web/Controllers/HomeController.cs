@@ -14,6 +14,7 @@ namespace RegistroEstudiante.web.Controllers
         ICursosService cursosService;
 
        public HomeController(IEstudiantesService servicio, ICursosService cursosServicio) {
+            //this.service = new EstudianteServiceTest();
             this.service = servicio;
             this.cursosService = cursosServicio;
         }

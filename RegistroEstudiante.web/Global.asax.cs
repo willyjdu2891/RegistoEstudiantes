@@ -16,7 +16,8 @@ namespace RegistroEstudiante.web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            ContainerConfig.ResolveDependencies();
+            //ContainerConfig.ResolveDependencies();
+            
         }
     }
 }
